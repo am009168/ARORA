@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SurveyPage">
+
+    <TextView
+        android:id="@+id/survey_question_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="How are you feeling today?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/mood_desc_11"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/exit_button_survey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/survey_question_tv">
+
+        <!--app:srcCompat="@drawable/red_butterfly_button"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="543dp"-->
+
+        <Button
+            android:id="@+id/red_mood_button"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:foreground="@drawable/ic_startgreatbutton"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_startgreatbutton" />
+
+        <Button
+            android:id="@+id/darkorange_mood_button"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:foreground="@drawable/ic_startgoodbutton"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_startgoodbutton"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="543dp" />
+        <!--app:srcCompat="@drawable/darkorange_butterfly_button"-->
+
+        <Button
+            android:id="@+id/orange_mood_button"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:foreground="@drawable/ic_startokbutton"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_startokbutton"
+            tools:layout_editor_absoluteX="171dp"
+            tools:layout_editor_absoluteY="543dp" />
+        <!--app:srcCompat="@drawable/orange_butterfly_button"-->
+
+        <Button
+            android:id="@+id/yellow_mood_button"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:foreground="@drawable/ic_startbadbutton"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_startbadbutton"
+            tools:layout_editor_absoluteX="246dp"
+            tools:layout_editor_absoluteY="543dp" />
+        <!--app:srcCompat="@drawable/yellow_butterflu_button"-->
+
+        <Button
+            android:id="@+id/green_mood_button"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:foreground="@drawable/ic_startterriblebutton"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_startterriblebutton"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="327dp"
+            tools:layout_editor_absoluteY="543dp" />
+
+        <!--app:srcCompat="@drawable/green_butterfly_button"-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exit_button_survey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Skip Survey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
